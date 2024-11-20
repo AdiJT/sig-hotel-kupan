@@ -2,5 +2,5 @@
 
 public enum KategoriLokasiPenting
 {
-    BandarUdara, Restoran, TempatWisata, Sekolah, Universitas
+    BandarUdara, Restoran, TempatWisata, Sekolah, Universitas, KedaiKopi, RumahSakit
 }
