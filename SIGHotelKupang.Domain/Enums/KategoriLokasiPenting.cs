@@ -2,5 +2,5 @@
 
 public enum KategoriLokasiPenting
 {
-    BandarUdara, Restoran, TempatWisata, Sekolah, Universitas, KedaiKopi, RumahSakit
+    BandarUdara, FasilitasOlahraga, Pelabuhan,  Restoran, TempatWisata, Sekolah, Universitas, KedaiKopi, FasilitasKesehatan, Salon, PusatBelanja, TempatIbadah, Taman
 }
