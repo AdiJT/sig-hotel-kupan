@@ -14,11 +14,12 @@ public class Hotel : Entity
     public TimeOnly? BatasBawahJamCheckOut { get; set; }
     public TimeOnly? BatasAtasJamCheckOut { get; set; }
     public string NomorTelepon { get; set; } = string.Empty;
-    public Uri Website { get; set; }
-    public string Email { get; set; } = string.Empty;
+    public Uri? Website { get; set; }
+    public string? Email { get; set; } = string.Empty;
     public Uri FotoHotel { get; set; }
     public int JumlahKamar { get; set; }
     public double Rating { get; set; }
+    public int JumlahUlasan { get; set; }
 
     public Alamat Alamat { get; set; }
     public List<Fasilitas> DaftarFasilitas { get; set; } = [];

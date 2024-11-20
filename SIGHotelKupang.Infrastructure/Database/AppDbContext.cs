@@ -13,6 +13,8 @@ public class AppDbContext : DbContext
     {
         modelBuilder.ApplyConfigurationsFromAssembly(AssemblyReferences.Assembly);
 
+        modelBuilder.SeedingData();
+
         base.OnModelCreating(modelBuilder);
     }
 
