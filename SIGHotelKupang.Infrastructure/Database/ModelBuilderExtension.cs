@@ -30,7 +30,188 @@ public static class ModelBuilderExtension
             {
                 Id = 4,
                 Nama = "Parkir"
-            }
+            },
+            new Fasilitas
+            {
+            Id = 5,
+                Nama = "Rental Mobil"
+            },
+             new Fasilitas
+             {
+                 Id = 6,
+                 Nama = "Sarapan"
+             },
+              new Fasilitas
+              {
+                  Id = 7,
+                  Nama = "Restoran"
+              },
+               new Fasilitas
+               {
+                   Id = 8,
+                   Nama = "Resepsionis 24 jam"
+               },
+                new Fasilitas
+                {
+                    Id = 9,
+                    Nama = "Layanan pemesanan taxi"
+                }, 
+                new Fasilitas
+                {
+                    Id = 10,
+                    Nama = "Ruang multi-fungsi"
+                },
+                new Fasilitas
+                 {
+                     Id = 11,
+                     Nama = "Laundry"
+                 },
+                 new Fasilitas
+                 {
+                     Id = 12,
+                     Nama = "Beach access"
+                 },
+                  new Fasilitas
+                  {
+                      Id = 13,
+                      Nama = "Kid-friendly"
+                  },
+                   new Fasilitas
+                   {
+                       Id = 14,
+                       Nama = "Airport Shuttle"
+                   },
+                    new Fasilitas
+                    {
+                        Id = 15,
+                        Nama = "Rental Sepeda"
+                    },
+                     new Fasilitas
+                     {
+                         Id = 16,
+                         Nama = "Meet Room"
+                     },
+                      new Fasilitas
+                      {
+                          Id = 17,
+                          Nama = "Outdoor pool"
+                      },
+                       new Fasilitas
+                       {
+                           Id = 18,
+                           Nama = "Restaurant"
+                       },
+                        new Fasilitas
+                        {
+                            Id = 19,
+                            Nama = "Cofee Shop"
+                        },
+                         new Fasilitas
+                         {
+                             Id = 20,
+                             Nama = "Family room"
+                         },
+                          new Fasilitas
+                          {
+                              Id = 21,
+                              Nama = "Toko"
+                          },
+                           new Fasilitas
+                           {
+                               Id = 22,
+                               Nama = "smooking area"
+                           },
+                            new Fasilitas
+                            {
+                                Id = 23,
+                                Nama = "TV"
+                            },
+                             new Fasilitas
+                             {
+                                 Id = 24,
+                                 Nama = "Staf Multibahasa"
+                             },
+                              new Fasilitas
+                              {
+                                  Id = 25,
+                                  Nama = "Fasilitas Rpat"
+                              },
+                               new Fasilitas
+                               {
+                                   Id = 26,
+                                   Nama = "Pancuran"
+                               },
+                                new Fasilitas
+                                {
+                                    Id = 27,
+                                    Nama = "Check in & Check out ekspress"
+                                },
+                                 new Fasilitas
+                                 {
+                                     Id = 28,
+                                     Nama = "Parkir bagi penyandang disabilitas"
+                                 },
+                                 new Fasilitas
+                                 {
+                                     Id = 29,
+                                     Nama = "Bar"
+                                 },
+                                 new Fasilitas
+                                 {
+                                     Id = 30,
+                                     Nama = "Security [24-hour]"
+                                 },
+                                 new Fasilitas
+                                 {
+                                     Id = 31,
+                                     Nama = "Dapur"
+                                 },
+                                 new Fasilitas
+                                 {
+                                     Id = 32,
+                                     Nama = "Balcony"
+                                 },
+                                 new Fasilitas
+                                 {
+                                     Id = 33,
+                                     Nama = "Lift"
+                                 },
+                                 new Fasilitas
+                                 {
+                                     Id = 34,
+                                     Nama = "Tempat Fitness"
+                                 },
+                                 new Fasilitas
+                                 {
+                                     Id = 35,
+                                     Nama = "Kulkas"
+                                 },
+                                 new Fasilitas
+                                 {
+                                     Id = 36,
+                                     Nama = "Layanan Kesehatan"
+                                 },
+                                 new Fasilitas
+                                 {
+                                     Id = 37,
+                                     Nama = "Taman"
+                                 },
+                                 new Fasilitas
+                                 {
+                                     Id = 38,
+                                     Nama = "Aula"
+                                 },
+                                new Fasilitas
+                                {
+                                    Id = 39,
+                                    Nama = "Perlengkapan Mandi"
+                                },
+                                new Fasilitas
+                                {
+                                    Id = 40,
+                                    Nama = "Kopi dan Snack"
+                                }
+
         );
         #endregion
 
