@@ -595,7 +595,56 @@ public static class ModelBuilderExtension
         #endregion
 
         #region HargaKamarHotel
-
+        modelBuilder.Entity<HargaKamarHotel>().HasData(
+            new HargaKamarHotel
+            {
+                IdHotel = 1,
+                IdTipeKamar = 2,
+                HargaKamar = 280561
+            },
+            new HargaKamarHotel
+            {
+                IdHotel = 1,
+                IdTipeKamar = 3,
+                HargaKamar = 362211
+            },
+            new HargaKamarHotel
+            {
+                IdHotel = 1,
+                IdTipeKamar = 4,
+                HargaKamar = 403021
+            },
+            new HargaKamarHotel
+            {
+                IdHotel = 2,
+                IdTipeKamar = 2,
+                HargaKamar = 100000
+            },
+            new HargaKamarHotel
+            {
+                IdHotel = 3,
+                IdTipeKamar = 1,
+                HargaKamar = 182182
+            },
+            new HargaKamarHotel
+            {
+                IdHotel = 5,
+                IdTipeKamar = 1,
+                HargaKamar = 133869
+            },
+            new HargaKamarHotel
+            {
+                IdHotel = 7,
+                IdTipeKamar = 5,
+                HargaKamar = 125382
+            },
+            new HargaKamarHotel
+            {
+                IdHotel = 7,
+                IdTipeKamar = 6,
+                HargaKamar = 134338
+            }
+        );
         #endregion
 
         return modelBuilder;
