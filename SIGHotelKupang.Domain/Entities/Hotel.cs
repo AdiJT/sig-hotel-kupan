@@ -16,6 +16,7 @@ public class Hotel : Entity
     public string NomorTelepon { get; set; } = string.Empty;
     public required Uri FotoHotel { get; set; }
     public int JumlahKamar { get; set; }
+    public double Rating { get; set; }
 
     public Alamat Alamat { get; set; }
     public List<Fasilitas> DaftarFasilitas { get; set; } = [];
