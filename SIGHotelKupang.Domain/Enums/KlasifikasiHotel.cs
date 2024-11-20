@@ -2,12 +2,16 @@
 
 public enum KlasifikasiHotel
 {
-    PondokWisata,
     PenyediaAkomodasiJangkaPendekLainnya,
     HotelMelati,
     HotelBintang1,
     HotelBintang2,
     HotelBintang3,
     HotelBintang4,
-    HotelBintang5
+    HotelBintang5,
+    Oyo,
+    HomeStay,
+    Reddoorz,
+    Hostel,
+    Guesthouse
 }

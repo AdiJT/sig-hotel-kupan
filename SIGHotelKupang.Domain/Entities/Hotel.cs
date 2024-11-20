@@ -9,12 +9,14 @@ public class Hotel : Entity
     public string Nama { get; set; } = string.Empty;
     public Point TitikKoordinat { get; set; } = Point.Empty;
     public KlasifikasiHotel KlasifikasiHotel { get; set; }
-    public int? BatasBawahJamCheckIn { get; set; }
-    public int? BatasAtasJamCheckIn { get; set; }
-    public int? BatasBawahJamCheckOut { get; set; }
-    public int? BatasAtasJamCheckOut { get; set; }
+    public TimeOnly? BatasBawahJamCheckIn { get; set; }
+    public TimeOnly? BatasAtasJamCheckIn { get; set; }
+    public TimeOnly? BatasBawahJamCheckOut { get; set; }
+    public TimeOnly? BatasAtasJamCheckOut { get; set; }
     public string NomorTelepon { get; set; } = string.Empty;
-    public required Uri FotoHotel { get; set; }
+    public Uri Website { get; set; }
+    public string Email { get; set; } = string.Empty;
+    public Uri FotoHotel { get; set; }
     public int JumlahKamar { get; set; }
     public double Rating { get; set; }
 

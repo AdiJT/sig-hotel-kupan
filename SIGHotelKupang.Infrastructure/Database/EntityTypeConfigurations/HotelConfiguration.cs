@@ -12,7 +12,7 @@ public class HotelConfiguration : IEntityTypeConfiguration<Hotel>
         builder.Property(x => x.TitikKoordinat).HasColumnType("geography (point)");
 
         builder.HasOne(x => x.Alamat).WithOne(x => x.Hotel);
-        builder.HasMany(x => x.DaftarFasilitas).WithMany(x => x.DaftarHotel);
+        builder.HasMany(x => x.DaftarFasilitas).WithMany(x => x.DaftarHotel).UsingEntity<FasilitasHotel>();
         builder.HasMany(x => x.DaftarHargaKamarHotel).WithOne(k => k.Hotel).HasForeignKey(k => k.IdHotel);
     }
 }

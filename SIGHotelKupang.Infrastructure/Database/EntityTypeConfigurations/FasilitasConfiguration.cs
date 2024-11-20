@@ -10,6 +10,6 @@ internal class FasilitasConfiguration : IEntityTypeConfiguration<Fasilitas>
     {
         builder.HasKey(f => f.Id);
 
-        builder.HasMany(f => f.DaftarHotel).WithMany(h => h.DaftarFasilitas);
+        builder.HasMany(f => f.DaftarHotel).WithMany(h => h.DaftarFasilitas).UsingEntity<FasilitasHotel>();
     }
 }

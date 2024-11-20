@@ -110,11 +110,308 @@ public static class ModelBuilderExtension
         #endregion
 
         #region Hotel
-
+        modelBuilder.Entity<Hotel>().HasData(
+            new Hotel
+            {
+                Id = 1,
+                Nama = "Chrysant Hotel & Resort",
+                KlasifikasiHotel = KlasifikasiHotel.HotelBintang4,
+                NomorTelepon = "0822-3722-6973",
+                Rating = 4,
+                JumlahKamar = 28,
+                BatasBawahJamCheckIn = new TimeOnly(14, 00),
+                BatasAtasJamCheckIn = new TimeOnly(0, 0),
+                BatasBawahJamCheckOut = new TimeOnly(0, 0),
+                BatasAtasJamCheckOut = new TimeOnly(12, 0),
+                TitikKoordinat = new Point(-10.18563, 123.66373),
+            },
+            new Hotel
+            {
+                Id = 2,
+                Nama = "Ladang Mas Homestay",
+                KlasifikasiHotel = KlasifikasiHotel.HomeStay,
+                NomorTelepon = "(021) 80629666",
+                Rating = 5.0,
+                JumlahKamar = 3,
+                BatasBawahJamCheckIn = new TimeOnly(14, 0),
+                BatasAtasJamCheckIn = new TimeOnly(23, 59),
+                BatasBawahJamCheckOut = new TimeOnly(7, 0),
+                BatasAtasJamCheckOut = new TimeOnly(12, 0),
+                TitikKoordinat = new Point(-10.1675, 123.6461),
+            },
+            new Hotel
+            {
+                Id = 3,
+                Nama = "Kopa Guest House",
+                KlasifikasiHotel = KlasifikasiHotel.Guesthouse,
+                NomorTelepon = "",
+                Rating = 4.6,
+                JumlahKamar = 3,
+                BatasBawahJamCheckIn = null,
+                BatasAtasJamCheckIn = null,
+                BatasBawahJamCheckOut = null,
+                BatasAtasJamCheckOut = new TimeOnly(15, 0),
+                TitikKoordinat = new Point(-10.15938, 123.64315),
+            },
+            new Hotel
+            {
+                Id = 4,
+                Nama = "Satria Homestay",
+                KlasifikasiHotel = KlasifikasiHotel.HomeStay,
+                NomorTelepon = "0821-4030-1904",
+                Rating = 4.6,
+                JumlahKamar = 9,
+                BatasBawahJamCheckIn = new TimeOnly(14, 0),
+                BatasAtasJamCheckIn = null,
+                BatasBawahJamCheckOut = null,
+                BatasAtasJamCheckOut = new TimeOnly(12, 0),
+                TitikKoordinat = new Point(-10.16343, 123.65602),
+            },
+            new Hotel
+            {
+                Id = 5,
+                Nama = "Homestay Karo Bobe",
+                KlasifikasiHotel = KlasifikasiHotel.HomeStay,
+                NomorTelepon = "082144728877",
+                Rating = 4.6,
+                JumlahKamar = 9,
+                BatasBawahJamCheckIn = new TimeOnly(14, 0),
+                BatasAtasJamCheckIn = new TimeOnly(22, 50),
+                BatasBawahJamCheckOut = new TimeOnly(0, 1),
+                BatasAtasJamCheckOut = new TimeOnly(12, 0),
+                TitikKoordinat = new Point(-10.16394, 123.66803),
+            },
+            new Hotel
+            {
+                Id = 6,
+                Nama = "OCD Beach Cafe & Hostel",
+                KlasifikasiHotel = KlasifikasiHotel.Hostel,
+                NomorTelepon = "0852-3915-9401",
+                Rating = 4.4,
+                JumlahKamar = 1,
+                BatasBawahJamCheckIn = new TimeOnly(13, 0),
+                BatasAtasJamCheckIn = new TimeOnly(13, 0),
+                BatasBawahJamCheckOut = new TimeOnly(12, 0),
+                BatasAtasJamCheckOut = new TimeOnly(12, 0),
+                TitikKoordinat = new Point(-10.13221, 123.66984),
+            },
+            new Hotel
+            {
+                Id = 7,
+                Nama = "RedDoorz Near Mangrove Forest",
+                KlasifikasiHotel = KlasifikasiHotel.Reddoorz,
+                NomorTelepon = "(021) 80629666",
+                Rating = 4.2,
+                JumlahKamar = 3,
+                BatasBawahJamCheckIn = new TimeOnly(14, 0),
+                BatasAtasJamCheckIn = new TimeOnly(16, 0),
+                BatasBawahJamCheckOut = null,
+                BatasAtasJamCheckOut = new TimeOnly(12, 0),
+                TitikKoordinat = new Point(-10.14905, 123.64554),
+                Website = new Uri("https://www.reddoorz.com")
+            },
+            new Hotel
+            {
+                Id = 8,
+                Nama = "Mai Mai Homestay",
+                KlasifikasiHotel = KlasifikasiHotel.HomeStay,
+                NomorTelepon = "(021) 80629666",
+                Rating = 4.4,
+                JumlahKamar = 17,
+                BatasBawahJamCheckIn = new TimeOnly(14, 0),
+                BatasAtasJamCheckIn = null,
+                BatasBawahJamCheckOut = null,
+                BatasAtasJamCheckOut = new TimeOnly(12, 0),
+                TitikKoordinat = new Point(-10.18846, 123.61535)
+            }
+        );
         #endregion
 
         #region Alamat 
+        modelBuilder.Entity<Alamat>().HasData(
+            new
+            {
+                Id = 1,
+                Jalan = "Jl. Antonov",
+                KodePos = "85361",
+                Kelurahan = "Baumata Barat",
+                Kecamatan = "Taebenu",
+                HotelId = 1
+            },
+            new
+            {
+                Id = 2,
+                Jalan = "Ladang Mas Mini Market",
+                KodePos = "85111",
+                Kelurahan = "Liliba",
+                Kecamatan = "Kelapa Lima",
+                HotelId = 2
+            },
+            new
+            {
+                Id = 3,
+                Jalan = "Jl. Bumi 1 gang 3",
+                KodePos = "85111",
+                Kelurahan = "Liliba",
+                Kecamatan = "Kelapa Lima",
+                HotelId = 3
+            },
+            new
+            {
+                Id = 4,
+                Jalan = "Jl. Libra No.4",
+                KodePos = "85111",
+                Kelurahan = "Liliba",
+                Kecamatan = "Kelapa Lima",
+                HotelId = 4
+            },
+            new
+            {
+                Id = 5,
+                Jalan = "",
+                KodePos = "85148",
+                Kelurahan = "Penfui",
+                Kecamatan = "Kupang Tengah",
+                HotelId = 5
+            },
+            new
+            {
+                Id = 6,
+                Jalan = "Jl. Terusan Timor Raya",
+                KodePos = "85228",
+                Kelurahan = "Lasiana",
+                Kecamatan = "Kelapa Lima",
+                HotelId = 6
+            },
+            new
+            {
+                Id = 7,
+                Jalan = "Jl. Terusan Timor Raya No.KM.8",
+                KodePos = "85228",
+                Kelurahan = "Oesapa",
+                Kecamatan = "Kelapa Lima",
+                HotelId = 7
+            },
+            new
+            {
+                Id = 8,
+                Jalan = "Jl. Siwalan No.2",
+                KodePos = "85142",
+                Kelurahan = "Maulafa",
+                Kecamatan = "Maulafa",
+                HotelId = 8
+            }
+        );
+        #endregion
 
+        #region FasilitasHotel
+        modelBuilder.Entity<FasilitasHotel>().HasData(
+            new FasilitasHotel
+            {
+                HotelId = 1,
+                FasilitasId = 1
+            },
+            new FasilitasHotel
+            {
+                HotelId = 1,
+                FasilitasId = 2
+            },
+            new FasilitasHotel
+            {
+                HotelId = 1,
+                FasilitasId = 3
+            },
+            new FasilitasHotel
+            {
+                HotelId = 1,
+                FasilitasId = 4
+            },
+            new FasilitasHotel
+            {
+                HotelId = 2,
+                FasilitasId = 1
+            },
+            new FasilitasHotel
+            {
+                HotelId = 2,
+                FasilitasId = 2
+            },
+            new FasilitasHotel
+            {
+                HotelId = 2,
+                FasilitasId = 4
+            }, 
+            new FasilitasHotel
+            {
+                HotelId = 3,
+                FasilitasId = 1
+            },
+            new FasilitasHotel
+            {
+                HotelId = 3,
+                FasilitasId = 2
+            },
+            new FasilitasHotel
+            {
+                HotelId = 3,
+                FasilitasId = 4
+            },
+            new FasilitasHotel
+            {
+                HotelId = 4,
+                FasilitasId = 1
+            },
+            new FasilitasHotel
+            {
+                HotelId = 4,
+                FasilitasId = 2
+            },
+            new FasilitasHotel
+            {
+                HotelId = 4,
+                FasilitasId = 4
+            },
+            new FasilitasHotel
+            {
+                HotelId = 5,
+                FasilitasId = 4
+            },
+            new FasilitasHotel
+            {
+                HotelId = 6,
+                FasilitasId = 2
+            },
+            new FasilitasHotel
+            {
+                HotelId = 6,
+                FasilitasId = 4
+            },
+            new FasilitasHotel
+            {
+                HotelId = 7,
+                FasilitasId = 2
+            },
+            new FasilitasHotel
+            {
+                HotelId = 7,
+                FasilitasId = 4
+            },
+            new FasilitasHotel
+            {
+                HotelId = 8,
+                FasilitasId = 1
+            },
+            new FasilitasHotel
+            {
+                HotelId = 8,
+                FasilitasId = 2
+            },
+            new FasilitasHotel
+            {
+                HotelId = 8,
+                FasilitasId = 4
+            }
+        );
         #endregion
 
         #region HargaKamarHotel
