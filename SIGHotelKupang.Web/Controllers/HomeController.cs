@@ -18,7 +18,7 @@ namespace SIGHotelKupang.Web.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Kontak()
         {
             return View();
         }
